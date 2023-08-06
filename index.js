@@ -1,6 +1,6 @@
 import prompt from "prompt-sync";
 import { add, sub, getRandom1, getRandom2 } from "./utils/helpers.js";
-
+//
 //l'appel de fonction getRandom. Math.floor donne les nombres entiers
 let r = Math.floor(getRandom1());
 console.log("Aleatoire : ", r);
