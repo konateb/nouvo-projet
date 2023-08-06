@@ -1,5 +1,5 @@
 import prompt from "prompt-sync";
-import { add, sub, getRandom1, getRandom2 } from "./utils/helpers.js";
+import { add, sub, getRandom1, getRandom2 } from "./tp/tp1.js";
 //
 //l'appel de fonction getRandom. Math.floor donne les nombres entiers
 let r = Math.floor(getRandom1());
