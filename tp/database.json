@@ -1,0 +1,6 @@
+{
+  "users": [
+    { "nom": "Bakary", "prenom": "Toto", "email": "konateb@gmail.com" },
+    { "nom": "Kofi", "prenom": "Samaraton", "email": "sam@gmail.com" }
+  ]
+}
