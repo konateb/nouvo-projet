@@ -22,7 +22,9 @@ let email = prompt()("taper l'email: ");
 let nouvoPrenom = prompt()("taper le nouveau prenom: ");
 
 // trouver l'utilisateur a modifier
-const userOld = users.find((user) => user.email === email);
+const userOld = users.find((user) =>{ 
+
+  user.email === email});
 // if(!userOld) {
 //   console.log("l'utilisateur n'existe pas");
 //   return;
