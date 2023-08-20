@@ -16,7 +16,7 @@ const getRandom1 = () => {
 const getRandom2 = (min, max) => {
   return Math.random() * (max - min) + min;
 };
-
+//ºC = (ºF-32) ÷ 1.8
 // Dans le fichier tp1.js  concevoir une fonction de conversion de Fahrenheit en Celsius
 //voir le modele fournit dans le groupe du cours.
 // Tester la dans index.js
