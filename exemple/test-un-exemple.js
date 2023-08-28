@@ -10,3 +10,6 @@ const tab1 = tab.map(conversionFei2Celc);
 // const result = conversionFei2Celc(20);
 console.table(tab);
 console.table(tab1);
+
+
+
