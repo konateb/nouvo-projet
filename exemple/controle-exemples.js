@@ -5,8 +5,7 @@
 if(condition) {
     // instruction_1
     conditionSatisfaite();
-    // instruction_2
-    conditionSatisfaite2();
+    
 }
 
 // Instruction if ... else
