@@ -4,7 +4,8 @@
 
 if(condition) {
     // instruction_1
-    conditionSatisfaite(); 
+    conditionSatisfaite(); // instruction_2
+    // deux instructions
     
 }
 
