@@ -1,12 +1,20 @@
 import prompt from "prompt-sync";
 import { add, sub, getRandom1, getRandom2 } from "./tp/tp1.js";
-const obj = {
-  property1: value1, // property name may be an identifier
-  2: value2, // or a number
-  "property n": value3, // or a string
-};
 
+let nom =  "Konate";
+let prenom = "Baba";
+let age =  35;
+let active = false;
 
+const etudiant = {
+nom: nom,
+prenom: prenom,
+age: age,
+active: active,
+getFullName: () =>`${prenom} ${nom}` 
+}
+
+console.log("etudiant", etudiant.getFullName());
 //
 //l'appel de fonction getRandom. Math.floor donne les nombres entiers
 let r = Math.floor(getRandom1());
