@@ -71,7 +71,8 @@ function promptEmail() {
     // demander de taper l'email de l'etudiant
     nouvoEmail = prompt()("taper l'email: ");
     console.log("trial count = ", count);
-  } while (findStudentByEmail(data, nouvoEmail));
+  } while (findStudentByEmail(data, nouvoEmail)); //only false if email not found
+                                                  // we need false to break the loop
   return nouvoEmail;
 }
 
@@ -143,9 +144,11 @@ function addStudent(data, etudiant) {
 }
 
 // 9) helper function to check if a student is already in the database
-// return student or undefined
+// la fonction returne true si etudiant existe deja, sinon returne false
+// only false if email not found
 function findStudentByEmail(data, email) {
+  // return student or undefined
   const existingStudent = data.etudiants.find((user) => user.email === email);
   if (existingStudent) return true;
-  else return false;
+  else return false; //only false if email not found
 }
