@@ -14,7 +14,9 @@ active: active,
 getFullName: () =>`${prenom} ${nom}` 
 }
 
-console.log("etudiant", etudiant.getFullName());
+console.log("le nom complet de l'etudiant", etudiant.getFullName());
+console.log("age", typeof etudiant.age);
+
 //
 //l'appel de fonction getRandom. Math.floor donne les nombres entiers
 let r = Math.floor(getRandom1());

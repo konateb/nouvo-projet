@@ -1,0 +1,131 @@
+{
+    "cours": [
+        {
+            "titre": "chimie",
+            "description": "Ce cours est une introduction de la chimie generale",
+            "prof": "",
+            "inscrits": [
+                "wwww",
+                "hhhhh",
+                "qqqq",
+                "kkkkk@gmail.com"
+            ]
+        }
+    ],
+    "profs": [
+        {
+            "nom": "Bakary",
+            "prenom": "Konate",
+            "email": "prof1@gmail.com",
+            "cours": "chimie"
+        },
+        {
+            "nom": "Bakary",
+            "prenom": "Konate",
+            "email": "prof1@gmail.com",
+            "cours": "chimie"
+        },
+        {
+            "nom": "Bakary",
+            "prenom": "Konate",
+            "email": "prof1@gmail.com",
+            "cours": "chimie"
+        },
+        {
+            "nom": "Bakary",
+            "prenom": "Konate",
+            "email": "prof1@gmail.com",
+            "cours": "chimie"
+        },
+        {
+            "nom": "Bakary",
+            "prenom": "Konate",
+            "email": "prof1@gmail.com",
+            "cours": "chimie"
+        },
+        {
+            "nom": "Bakary",
+            "prenom": "Konate",
+            "email": "prof1@gmail.com",
+            "cours": "chimie"
+        },
+        {
+            "nom": "Bakary",
+            "prenom": "Konate",
+            "email": "prof1@gmail.com",
+            "cours": "chimie"
+        },
+        {
+            "nom": "Bakary",
+            "prenom": "Konate",
+            "email": "prof1@gmail.com",
+            "cours": "chimie"
+        },
+        {
+            "nom": "Bakary",
+            "prenom": "Konate",
+            "email": "prof1@gmail.com",
+            "cours": "chimie"
+        },
+        {
+            "nom": "Bakary",
+            "prenom": "Konate",
+            "email": "prof1@gmail.com",
+            "cours": "chimie"
+        },
+        {
+            "nom": "Bakary",
+            "prenom": "Konate",
+            "email": "prof1@gmail.com",
+            "cours": "chimie"
+        }
+    ],
+    "etudiants": [
+        {
+            "nom": "mg",
+            "prenom": "gm",
+            "email": "gm@gmail.com"
+        },
+        {
+            "nom": "kk",
+            "prenom": "ba",
+            "email": "bb@gm/com"
+        },
+        {
+            "nom": "pppp",
+            "prenom": "pppp",
+            "email": "ppppp"
+        },
+        {
+            "nom": "ttt",
+            "prenom": "ttt",
+            "email": "ttt"
+        },
+        {
+            "nom": "jjjj",
+            "prenom": "jjjjj",
+            "email": "jjjj"
+        },
+        {
+            "nom": "wwww",
+            "prenom": "wwww",
+            "email": "wwww"
+        },
+        {
+            "nom": "yyyyy",
+            "prenom": "yyyyy",
+            "email": "hhhhh"
+        },
+        {
+            "nom": "qqqq",
+            "prenom": "qqqq",
+            "email": "qqqq"
+        },
+        {
+            "nom": "BBBB",
+            "prenom": "KKKK",
+            "email": "kkkkk@gmail.com",
+            "myCourse": []
+        }
+    ]
+}

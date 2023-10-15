@@ -22,5 +22,5 @@ const calcule = (op) => {
 const resultNoOp = calcule("exponent")(20, 10);
 console.log(resultNoOp);
 
-const result = calcule("add")(20, 10);
+const result = calcule("sub")(20, 10);
 console.log(result);
