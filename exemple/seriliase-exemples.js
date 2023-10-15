@@ -1,4 +1,5 @@
 import prompt from "prompt-sync";
+import { v4 as uuidv4 } from "uuid";
 import { readFileSync, writeFileSync } from "node:fs";
 //variable to store filename
 const fileName = "database.json";
@@ -12,6 +13,7 @@ let data = readData(fileName);
 
 // 2) create and course data
 data.cours.push({
+  id: uuidv4(),
   titre: "chimie",
   description: "Ce cours est une introduction de la chimie generale",
   prof: "",
@@ -19,6 +21,7 @@ data.cours.push({
 });
 // 3) create and prof data
 let prof = {
+  id: uuidv4(),
   nom: "Bakary",
   prenom: "Konate",
   email: "prof1@gmail.com",
@@ -47,6 +50,7 @@ function createStudent(data) {
     const nouvoNom = prompt()("taper le nom: ");
     const choixCourse = prompt()("taper le choix de cours: ");
     const etudiant = {
+      id: uuidv4(),
       nom: nouvoNom,
       prenom: nouvoPrenom,
       email: nouvoEmail,
@@ -61,7 +65,7 @@ function createStudent(data) {
 }
 
 // 2) helper function to prompt student email.
-//  It check if student email exists. Only3 tries is allowed.
+//  It checks if student email exists. Only3 tries is allowed.
 function promptEmail() {
   let nouvoEmail = null;
   let count = 0;
@@ -72,7 +76,7 @@ function promptEmail() {
     nouvoEmail = prompt()("taper l'email: ");
     console.log("trial count = ", count);
   } while (findStudentByEmail(data, nouvoEmail)); //only false if email not found
-                                                  // we need false to break the loop
+  // we need false to break the loop
   return nouvoEmail;
 }
 
