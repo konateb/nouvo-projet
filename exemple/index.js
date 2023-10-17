@@ -1,3 +1,6 @@
+import prompt from "prompt-sync";
+import CRUDWithJSON from "/crud/CRUDWithJSON";
+
 const add = (a, b) => a + b;
 const sub = (a, b) => a - b;
 const mul = (a, b) => a * b;
@@ -19,8 +22,13 @@ const calcule = (op) => {
 };
 
 //tester
-const resultNoOp = calcule("exponent")(20, 10);
-console.log(resultNoOp);
+// const resultNoOp = calcule("exponent")(20, 10);
+// console.log(resultNoOp);
 
-const result = calcule("sub")(20, 10);
-console.log(result);
+// const result = calcule("sub")(20, 10);
+// console.log(result);
+//test CRUD
+const myCRUD = new CRUDWithJSON("data.json");
+const studentId = "student-unique-id"; // Remplacez par l'ID de l'étudiant
+const courseId = "course-unique-id"; // Remplacez par l'ID du cours
+myCRUD.enrollStudentToCourse(studentId, courseId);

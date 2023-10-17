@@ -1,79 +1,105 @@
 {
     "cours": [
         {
+            "id": "03878fce-682c-40e3-8510-8ce679da1b91",
             "titre": "chimie",
             "description": "Ce cours est une introduction de la chimie generale",
             "prof": "",
             "inscrits": [
-                "wwww",
-                "hhhhh",
-                "qqqq",
-                "kkkkk@gmail.com"
+                "bk@gmail.com",
+                "gggg",
+                "PPPPPP",
+                "vvvv"
             ]
+        },
+        {
+            "id": "9c13fa50-e08c-4460-bd10-40a25ccd6127",
+            "titre": "chimie",
+            "description": "Ce cours est une introduction de la chimie generale",
+            "prof": "",
+            "inscrits": []
+        },
+        {
+            "id": "075f40e7-b3d3-439c-8ec3-e9a8e17749c7",
+            "titre": "chimie",
+            "description": "Ce cours est une introduction de la chimie generale",
+            "prof": "",
+            "inscrits": []
+        },
+        {
+            "id": "4571b71d-7198-4d3f-bc01-58023eb3f783",
+            "titre": "chimie",
+            "description": "Ce cours est une introduction de la chimie generale",
+            "prof": "",
+            "inscrits": []
+        },
+        {
+            "id": "4c3b3aa1-6e16-4c6d-b7a4-bbad0c199e13",
+            "titre": "chimie",
+            "description": "Ce cours est une introduction de la chimie generale",
+            "prof": "",
+            "inscrits": []
+        },
+        {
+            "id": "5a96929f-fe72-4c10-89ad-92ce2d356907",
+            "titre": "chimie",
+            "description": "Ce cours est une introduction de la chimie generale",
+            "prof": "",
+            "inscrits": []
+        },
+        {
+            "id": "09f8c8a7-642c-43c6-aead-eda21e97c4d9",
+            "titre": "chimie",
+            "description": "Ce cours est une introduction de la chimie generale",
+            "prof": "",
+            "inscrits": []
         }
     ],
     "profs": [
         {
+            "id": "e3521462-7a6d-4eb6-b920-3a08f2c5b232",
             "nom": "Bakary",
             "prenom": "Konate",
             "email": "prof1@gmail.com",
             "cours": "chimie"
         },
         {
+            "id": "dbd66bd2-e777-4732-af7a-8d0e67e5893e",
             "nom": "Bakary",
             "prenom": "Konate",
             "email": "prof1@gmail.com",
             "cours": "chimie"
         },
         {
+            "id": "b3f79e3d-98b9-4601-8d93-38031f08fddf",
             "nom": "Bakary",
             "prenom": "Konate",
             "email": "prof1@gmail.com",
             "cours": "chimie"
         },
         {
+            "id": "0a672320-4f6c-434c-8d55-127f615b01ff",
             "nom": "Bakary",
             "prenom": "Konate",
             "email": "prof1@gmail.com",
             "cours": "chimie"
         },
         {
+            "id": "889bcf15-b05c-462d-992d-62c92105b9a7",
             "nom": "Bakary",
             "prenom": "Konate",
             "email": "prof1@gmail.com",
             "cours": "chimie"
         },
         {
+            "id": "c2ab4c84-eba4-4ea9-8474-76a7e89af824",
             "nom": "Bakary",
             "prenom": "Konate",
             "email": "prof1@gmail.com",
             "cours": "chimie"
         },
         {
-            "nom": "Bakary",
-            "prenom": "Konate",
-            "email": "prof1@gmail.com",
-            "cours": "chimie"
-        },
-        {
-            "nom": "Bakary",
-            "prenom": "Konate",
-            "email": "prof1@gmail.com",
-            "cours": "chimie"
-        },
-        {
-            "nom": "Bakary",
-            "prenom": "Konate",
-            "email": "prof1@gmail.com",
-            "cours": "chimie"
-        },
-        {
-            "nom": "Bakary",
-            "prenom": "Konate",
-            "email": "prof1@gmail.com",
-            "cours": "chimie"
-        },
-        {
+            "id": "19ed8264-2e41-4c10-a2a9-28ab78527357",
             "nom": "Bakary",
             "prenom": "Konate",
             "email": "prof1@gmail.com",
@@ -82,50 +108,40 @@
     ],
     "etudiants": [
         {
-            "nom": "mg",
-            "prenom": "gm",
-            "email": "gm@gmail.com"
+            "id": "e7aafd36-b9c1-4440-afb8-84c23c793463",
+            "nom": "bk",
+            "prenom": "bk",
+            "email": "bk@gmail.com",
+            "courses": [
+                "chimie"
+            ]
         },
         {
-            "nom": "kk",
-            "prenom": "ba",
-            "email": "bb@gm/com"
+            "id": "6a1a947a-86f1-4a07-8d22-4513b6827108",
+            "nom": "gggg",
+            "prenom": "ggggg",
+            "email": "gggg",
+            "courses": [
+                "chimie"
+            ]
         },
         {
-            "nom": "pppp",
-            "prenom": "pppp",
-            "email": "ppppp"
+            "id": "eb62af24-f6eb-4592-aaf8-5ed05e5fa68c",
+            "nom": "pppppp",
+            "prenom": "pppppp",
+            "email": "PPPPPP",
+            "courses": [
+                "chimie"
+            ]
         },
         {
-            "nom": "ttt",
-            "prenom": "ttt",
-            "email": "ttt"
-        },
-        {
-            "nom": "jjjj",
-            "prenom": "jjjjj",
-            "email": "jjjj"
-        },
-        {
-            "nom": "wwww",
-            "prenom": "wwww",
-            "email": "wwww"
-        },
-        {
-            "nom": "yyyyy",
-            "prenom": "yyyyy",
-            "email": "hhhhh"
-        },
-        {
-            "nom": "qqqq",
-            "prenom": "qqqq",
-            "email": "qqqq"
-        },
-        {
-            "nom": "BBBB",
-            "prenom": "KKKK",
-            "email": "kkkkk@gmail.com",
-            "myCourse": []
+            "id": "a94f21e4-8f8c-4a3e-92b6-5616a147b093",
+            "nom": "vvvvv",
+            "prenom": "vvvvv",
+            "email": "vvvv",
+            "courses": [
+                "chimie"
+            ]
         }
     ]
 }
