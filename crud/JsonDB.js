@@ -1,9 +1,7 @@
-const { v4: uuidv4 } = require("uuid");
-import prompt from "prompt-sync";
 import { v4 as uuidv4 } from "uuid";
 import fs from "node:fs";
 
-class CRUDWithJSON {
+class JsonDB {
   constructor(filename) {
     this.filename = filename;
     this.data = {
@@ -95,9 +93,9 @@ class CRUDWithJSON {
     const student = this.readOne("students", studentId);
     const course = this.readOne("courses", courseId);
 
-    if (student && course) {
-      // Vérifie si l'étudiant n'est pas déjà inscrit au cours
-      if (!course.inscrits.includes(studentId)) {
+    if (student && course ) {
+      // Vérifie si l'étudiant n'est pas déjà inscrit au cours n'a pas plus que 4 cours
+      if (!course.inscrits.includes(studentId) && student.courses.length <= 4) {
         course.inscrits.push(studentId);
         this.update("courses", courseId, course);
 
@@ -111,4 +109,4 @@ class CRUDWithJSON {
   }
 }
 
-export default CRUDWithJSON; // Exporte la classe CRUDWithJSON
+export default JsonDB; // Exporte la classe CRUDWithJSON
