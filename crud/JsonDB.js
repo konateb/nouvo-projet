@@ -1,5 +1,5 @@
 import { v4 as uuidv4 } from "uuid";
-import fs from "node:fs";
+import * as fs from "node:fs";
 
 class JsonDB {
   constructor(filename) {
@@ -32,58 +32,58 @@ class JsonDB {
   }
 
   // Méthode CREATE : Ajouter un nouvel élément à un tableau spécifique
-  create(type, item) {
-    if (type in this.data) {
-      if (type === "courses" && item.prof) {
+  create(entityType, item) {
+    if (entityType in this.data) {
+      if (entityType === "courses") {
         // Trouver le professeur et ajouter le cours à ses données
         const professeur = this.data.profs.find(
-          (prof) => prof.id === item.prof
+          (prof) => prof.cours === item.title
         );
         if (professeur) {
-          professeur.cours = item.titre;
+          item.prof = prof.id;
         }
       }
       item.id = uuidv4(); // Générer un identifiant unique
-      this.data[type].push(item);
+      this.data[entityType].push(item);
       this.saveData();
     }
   }
 
   // Méthode READ : Obtenir tous les éléments d'un tableau spécifique
-  readAll(type) {
-    if (type in this.data) {
-      return this.data[type];
+  readAll(entityType) {
+    if (entityType in this.data) {
+      return this.data[entityType];
     } else {
       return null;
     }
   }
 
   // Méthode READ : Obtenir un élément par son ID depuis un tableau spécifique
-  readOne(type, id) {
-    if (type in this.data) {
-      return this.data[type].find((item) => item.id === id) || null;
+  readOne(entityType, id) {
+    if (entityType in this.data) {
+      return this.data[entityType].find((item) => item.id === id) || null;
     } else {
       return null;
     }
   }
 
   // Méthode UPDATE : Mettre à jour un élément par son ID dans un tableau spécifique
-  update(type, id, newItem) {
-    if (type in this.data) {
-      const index = this.data[type].findIndex((item) => item.id === id);
+  update(entityType, id, newItem) {
+    if (entityType in this.data) {
+      const index = this.data[entityType].findIndex((item) => item.id === id);
       if (index !== -1) {
-        this.data[type][index] = newItem;
+        this.data[entityType][index] = newItem;
         this.saveData();
       }
     }
   }
 
   // Méthode DELETE : Supprimer un élément par son ID depuis un tableau spécifique
-  delete(type, id) {
-    if (type in this.data) {
-      const index = this.data[type].findIndex((item) => item.id === id);
+  delete(entityType, id) {
+    if (entityType in this.data) {
+      const index = this.data[entityType].findIndex((item) => item.id === id);
       if (index !== -1) {
-        this.data[type].splice(index, 1);
+        this.data[entityType].splice(index, 1);
         this.saveData();
       }
     }
@@ -93,7 +93,7 @@ class JsonDB {
     const student = this.readOne("students", studentId);
     const course = this.readOne("courses", courseId);
 
-    if (student && course ) {
+    if (student && course) {
       // Vérifie si l'étudiant n'est pas déjà inscrit au cours n'a pas plus que 4 cours
       if (!course.inscrits.includes(studentId) && student.courses.length <= 4) {
         course.inscrits.push(studentId);
@@ -109,4 +109,4 @@ class JsonDB {
   }
 }
 
-export default JsonDB; // Exporte la classe CRUDWithJSON
+export default JsonDB; // Exporte la classe JsonDB

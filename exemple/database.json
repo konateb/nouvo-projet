@@ -9,7 +9,8 @@
                 "bk@gmail.com",
                 "gggg",
                 "PPPPPP",
-                "vvvv"
+                "vvvv",
+                "bk@gmail"
             ]
         },
         {
@@ -49,6 +50,13 @@
         },
         {
             "id": "09f8c8a7-642c-43c6-aead-eda21e97c4d9",
+            "titre": "chimie",
+            "description": "Ce cours est une introduction de la chimie generale",
+            "prof": "",
+            "inscrits": []
+        },
+        {
+            "id": "492777ec-7f55-49df-85b6-6c091353f5a0",
             "titre": "chimie",
             "description": "Ce cours est une introduction de la chimie generale",
             "prof": "",
@@ -104,6 +112,13 @@
             "prenom": "Konate",
             "email": "prof1@gmail.com",
             "cours": "chimie"
+        },
+        {
+            "id": "7bea057a-080f-494b-9df6-8e62ad02591f",
+            "nom": "Bakary",
+            "prenom": "Konate",
+            "email": "prof1@gmail.com",
+            "cours": "chimie"
         }
     ],
     "etudiants": [
@@ -139,6 +154,15 @@
             "nom": "vvvvv",
             "prenom": "vvvvv",
             "email": "vvvv",
+            "courses": [
+                "chimie"
+            ]
+        },
+        {
+            "id": "4ff6ff39-95bb-41e8-9ee4-2f8d01642b22",
+            "nom": "bk",
+            "prenom": "bk",
+            "email": "bk@gmail",
             "courses": [
                 "chimie"
             ]
